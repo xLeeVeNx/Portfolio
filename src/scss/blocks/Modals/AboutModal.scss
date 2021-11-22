@@ -1,0 +1,191 @@
+.about-modal {
+  &__title {
+    padding-top: 100px;
+    margin-bottom: 50px;
+
+    @extend %berkshireSwash-400;
+    font-size: 3.2rem;
+
+    text-align: center;
+
+    background: url('../../../assets/images/bg-font.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__skills {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 25%;
+  }
+
+  &__progress {
+    position: relative;
+
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    width: 150px;
+    height: 150px;
+
+    overflow: unset;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 120%;
+      height: 120%;
+
+      background-color: $mainColor;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 100%;
+      width: 100%;
+
+      border: 6px solid #2A2A2A;
+      border-radius: 50%;
+    }
+
+    &.yellow {
+      .about-modal__progress-bar {
+        border-color: #FDBA04;
+      }
+    }
+
+    &.blue {
+      .about-modal__progress-bar {
+        border-color: #377dff;
+      }
+    }
+
+    &.red {
+      .about-modal__progress-bar {
+        border-color: #fe3e57;
+      }
+    }
+
+    &.green {
+      .about-modal__progress-bar {
+        border-color: #00c9a7;
+      }
+    }
+  }
+
+  &__progress-left,
+  &__progress-right {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+
+  &__progress-left {
+    left: 0;
+
+    .about-modal__progress-bar {
+      left: 100%;
+
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      border-left: 0;
+
+      transform-origin: left;
+      animation: thirdLoading 1s linear 1.8s forwards;
+    }
+  }
+
+  &__progress-right {
+    right: 0;
+
+    .about-modal__progress-bar {
+      left: -100%;
+
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      border-right: 0;
+
+      transform-origin: right;
+      animation: firstLoading 1.8s linear forwards;
+    }
+  }
+
+  &__progress-bar {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-width: 6px;
+    border-style: solid;
+  }
+
+  &__progress-value {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+
+    font-size: 1.5em;
+
+    background-color: $minorColor;
+    border-radius: 50%;
+  }
+
+  &__text {
+    font-size: 1.125em;
+  }
+
+  @keyframes firstLoading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes secondLoading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes thirdLoading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(120deg);
+    }
+  }
+}
