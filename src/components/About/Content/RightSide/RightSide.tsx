@@ -1,8 +1,8 @@
 import React from 'react';
 import { List } from './Inner/List/List';
-import { Title } from './Inner/Title';
 import { Text } from './Inner/Text';
 import { Button } from '../../../Button/Button';
+import { Title } from '../../../Title/Title';
 
 type RightSidePropsType = {
 	setAboutModalValue: (value: boolean) => void;

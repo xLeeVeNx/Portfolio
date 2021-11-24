@@ -1,6 +1,6 @@
 .about-modal {
   &__title {
-    padding-top: 100px;
+    padding-top: 70px;
     margin-bottom: 50px;
 
     @extend %berkshireSwash-400;
@@ -16,7 +16,7 @@
   &__skills {
     display: flex;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 
   &__skill {
@@ -69,11 +69,23 @@
       .about-modal__progress-bar {
         border-color: #FDBA04;
       }
+
+      .about-modal__progress-left {
+        .about-modal__progress-bar {
+          animation: secondLoading 0.64s linear 0.8s forwards;
+        }
+      }
     }
 
     &.blue {
       .about-modal__progress-bar {
         border-color: #377dff;
+      }
+
+      .about-modal__progress-left {
+        .about-modal__progress-bar {
+          animation: thirdLoading 0.24s linear 0.8s forwards;
+        }
       }
     }
 
@@ -81,11 +93,23 @@
       .about-modal__progress-bar {
         border-color: #fe3e57;
       }
+
+      .about-modal__progress-left {
+        .about-modal__progress-bar {
+          animation: fourthLoading 0.4s linear 0.8s forwards;
+        }
+      }
     }
 
     &.green {
       .about-modal__progress-bar {
         border-color: #00c9a7;
+      }
+
+      .about-modal__progress-left {
+        .about-modal__progress-bar {
+          animation: fifthLoading 0.48s linear 0.8s forwards;
+        }
       }
     }
   }
@@ -113,7 +137,6 @@
       border-left: 0;
 
       transform-origin: left;
-      animation: thirdLoading 1s linear 1.8s forwards;
     }
   }
 
@@ -128,7 +151,7 @@
       border-right: 0;
 
       transform-origin: right;
-      animation: firstLoading 1.8s linear forwards;
+      animation: firstLoading 0.8s linear forwards;
     }
   }
 
@@ -176,7 +199,7 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(90deg);
+      transform: rotate(144deg);
     }
   }
 
@@ -185,7 +208,25 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(120deg);
+      transform: rotate(54deg);
+    }
+  }
+
+  @keyframes fourthLoading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes fifthLoading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(108deg);
     }
   }
 }

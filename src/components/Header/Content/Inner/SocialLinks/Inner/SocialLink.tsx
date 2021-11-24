@@ -10,7 +10,7 @@ interface ISocialLink {
 export const SocialLink: React.FC<ISocialLink> = ({href, Icon}) => {
 	return (
 		<li className="header__social-item">
-			<a className="header__social-link" href={href} target="_blank">
+			<a className="header__social-link" href={href} target="_blank" rel="noreferrer">
 				<Icon />
 			</a>
 		</li>
