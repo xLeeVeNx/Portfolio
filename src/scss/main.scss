@@ -1,20 +1,24 @@
 // common
-@import 'common/reset';
-@import 'common/fonts';
-@import 'common/extends';
-@import 'common/vars';
-@import 'common/global';
+@import "common/reset";
+@import "common/fonts";
+@import "common/extends";
+@import "common/vars";
+@import "common/global";
 
 // components
-@import 'components/Modal';
+@import "components/Modal";
 
 // Header
-@import 'blocks/Header/Header';
-@import 'blocks/Header/Nav';
-@import 'blocks/Header/Menu';
+@import "blocks/Header/Header";
+@import "blocks/Header/Nav";
+@import "blocks/Header/Menu";
 
 // About
-@import 'blocks/About/About';
+@import "blocks/About/About";
 
 // Modals
-@import 'blocks/Modals/AboutModal';
+@import "blocks/Modals/AboutModal";
+@import "blocks/Modals//WorkModalBody.scss";
+
+// Works
+@import "blocks/Works/Works.scss";

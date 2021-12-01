@@ -3,11 +3,11 @@ body {
   font-size: 16px;
 
   background-color: $mainColor;
-  color: #FFFFFF;
+  color: #ffffff;
 
   &::-webkit-scrollbar {
     width: 3px;
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -75,7 +75,7 @@ body {
   cursor: pointer;
 
   &:hover {
-    background-color: #DDDDDD;
+    background-color: #dddddd;
     color: #333333;
   }
 }
