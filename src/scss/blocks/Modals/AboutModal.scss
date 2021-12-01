@@ -1,4 +1,8 @@
 .about-modal {
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2a;
+
   &__title {
     padding-top: 70px;
     margin-bottom: 50px;
@@ -8,7 +12,7 @@
 
     text-align: center;
 
-    background: url('../../../assets/images/bg-font.jpg') no-repeat;
+    background: url("../../../assets/images/bg-font.jpg") no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -61,13 +65,13 @@
       height: 100%;
       width: 100%;
 
-      border: 6px solid #2A2A2A;
+      border: 6px solid #2a2a2a;
       border-radius: 50%;
     }
 
     &.yellow {
       .about-modal__progress-bar {
-        border-color: #FDBA04;
+        border-color: #fdba04;
       }
 
       .about-modal__progress-left {
