@@ -14,6 +14,8 @@ import { Modal } from "./Modal/Modal";
 import { AboutBody } from "./Modal/Inner/AboutBody/AboutBody";
 import WorkModalBody from "./WorkModalBody/WorkModalBody";
 import Works from "./Works/Works";
+import Skills from "./Skills/Skills";
+import Contacts from "./Contacts/Contacts";
 
 export const App: React.FC = () => {
   const [aboutModalValue, setAboutModalValue] = useState<boolean>(false);
@@ -54,6 +56,8 @@ export const App: React.FC = () => {
         handleOpenWorkModal={setIsWorkModal}
         handleSetWorkCardInfo={handleSetWorkCardInfo}
       />
+      <Skills />
+      <Contacts />
       <Modal active={isWorkModal} setActive={setIsWorkModal}>
         <WorkModalBody workCardData={workCardData} />
       </Modal>
