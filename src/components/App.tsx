@@ -8,6 +8,7 @@ import { closeModal } from "./pureFunctions/closeModal";
 import { TWorkCardModal } from "../types/works";
 // Types
 
+// Components
 import { Header } from "./Header/Header";
 import { About } from "./About/About";
 import { Modal } from "./Modal/Modal";
@@ -16,6 +17,8 @@ import WorkModalBody from "./WorkModalBody/WorkModalBody";
 import Works from "./Works/Works";
 import Skills from "./Skills/Skills";
 import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer/Footer";
+// Components
 
 export const App: React.FC = () => {
   const [aboutModalValue, setAboutModalValue] = useState<boolean>(false);
@@ -58,6 +61,7 @@ export const App: React.FC = () => {
       />
       <Skills />
       <Contacts />
+      <Footer />
       <Modal active={isWorkModal} setActive={setIsWorkModal}>
         <WorkModalBody workCardData={workCardData} />
       </Modal>
