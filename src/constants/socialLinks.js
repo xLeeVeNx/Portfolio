@@ -8,34 +8,42 @@ const whatsAppIcon = <FaWhatsapp className="footer__icon" />;
 
 const social = [
   {
+    id: 0,
     name: "Ramil",
     socialLinks: [
       {
+        id: 0,
         socialLink: "https://www.instagram.com/ashrafulin_/?hl=ru",
         icon: instagramIcon,
       },
       {
+        id: 1,
         socialLink: "https://t.me/niceguygg",
         icon: telegramIcon,
       },
       {
+        id: 2,
         socialLink: "https://api.whatsapp.com/send?phone=77004870180&text=",
         icon: whatsAppIcon,
       },
     ],
   },
   {
+    id: 1,
     name: "Damil",
     socialLinks: [
       {
+        id: 0,
         socialLink: "",
         icon: instagramIcon,
       },
       {
+        id: 1,
         socialLink: "",
         icon: telegramIcon,
       },
       {
+        id: 2,
         socialLink: "",
         icon: whatsAppIcon,
       },

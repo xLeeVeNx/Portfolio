@@ -8,6 +8,7 @@ const PhoneIcon = <FiPhoneCall className="contacts__image" />;
 
 const contacts = [
   {
+    id: 0,
     name1: "Ramil",
     textName1: "Kazakhstan, Taldykorgan",
     title: "Address",
@@ -16,6 +17,7 @@ const contacts = [
     icon: AddressIcon,
   },
   {
+    id: 1,
     name1: "Ramil",
     textName1: "ramilashrafulinfrontend@gmail.com",
     title: "Email",
@@ -24,6 +26,7 @@ const contacts = [
     icon: EmailIcon,
   },
   {
+    id: 2,
     name1: "Ramil",
     textName1: "+7 (700) 487-01-80",
     title: "Phone",

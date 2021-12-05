@@ -11,13 +11,19 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Logo logoText="RD" />
-      {social.map(({ name, socialLinks }) => {
+      {social.map(({ name, socialLinks, id }) => {
         return (
-          <div className="footer__box">
+          <div className="footer__box" key={id}>
             <p className="footer__name">{name}:</p>
             <ul className="footer__list">
-              {socialLinks.map(({ socialLink, icon }) => {
-                return <SocialLinkCard socialLink={socialLink} icon={icon} />;
+              {socialLinks.map(({ socialLink, icon, id }) => {
+                return (
+                  <SocialLinkCard
+                    socialLink={socialLink}
+                    icon={icon}
+                    key={id}
+                  />
+                );
               })}
             </ul>
           </div>

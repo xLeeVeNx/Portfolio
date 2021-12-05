@@ -18,6 +18,7 @@ import Works from "./Works/Works";
 import Skills from "./Skills/Skills";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
+import Experience from "./Experience/Experience";
 // Components
 
 export const App: React.FC = () => {
@@ -59,6 +60,7 @@ export const App: React.FC = () => {
         handleOpenWorkModal={setIsWorkModal}
         handleSetWorkCardInfo={handleSetWorkCardInfo}
       />
+      <Experience />
       <Skills />
       <Contacts />
       <Footer />

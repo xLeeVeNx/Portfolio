@@ -25,12 +25,13 @@
 }
 
 .works {
+  position: relative;
   margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 200px;
 
   &__title {
     font-size: 48px;
