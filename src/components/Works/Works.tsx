@@ -18,7 +18,7 @@ const Works: React.FC<IWorks> = ({
   handleSetWorkCardInfo,
 }) => {
   return (
-    <section className="works">
+    <section className="works" id="projects">
       <h2 className="works__title">Latest Project</h2>
       <WorksCardContainer
         handleOpenWorkModal={handleOpenWorkModal}

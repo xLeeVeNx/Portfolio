@@ -11,7 +11,9 @@
 // Header
 @import "blocks/Header/Header";
 @import "blocks/Header/Nav";
-@import "blocks/Header/Menu";
+
+// BurgerMenu
+@import "blocks/BurgerMenu/BurgerMenu.scss";
 
 // About
 @import "blocks/About/About";
@@ -34,3 +36,6 @@
 
 // Experience
 @import "blocks/Experience/Experience.scss";
+
+// Menu
+@import "blocks/Menu/Menu.scss";

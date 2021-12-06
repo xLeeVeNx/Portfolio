@@ -9,7 +9,7 @@ interface ISkills {}
 
 const Skills: React.FC<ISkills> = ({}) => {
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <h2 className="skills__title">Our Skills</h2>
       <SkillsCardContainer />
       <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
