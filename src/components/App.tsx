@@ -19,12 +19,15 @@ import Skills from "./Skills/Skills";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
 import Experience from "./Experience/Experience";
+import Menu from "./Menu/Menu";
 // Components
 
 export const App: React.FC = () => {
   const [aboutModalValue, setAboutModalValue] = useState<boolean>(false);
   const [isWorkModal, setIsWorkModal] = useState<boolean>(false);
   const [workCardData, setWorkCardData] = useState<TWorkCardModal>();
+
+  const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
 
   useEffect(() => {
     const handleEscClose = (e: KeyboardEvent) => {
@@ -47,15 +50,18 @@ export const App: React.FC = () => {
     setWorkCardData(workCardInfo);
   };
 
+  const handleOpenBurgerMenu = () => {
+    setIsMenuActive(true);
+  };
+
+  const handleCloseBurgerMenu = () => {
+    setIsMenuActive(false);
+  };
+
   return (
     <div className="wrapper">
-      <Header />
+      <Header handleOpenBurgerMenu={handleOpenBurgerMenu} />
       <About setAboutModalValue={setAboutModalValue} />
-
-      <Modal active={aboutModalValue} setActive={setAboutModalValue}>
-        <AboutBody active={aboutModalValue} />
-      </Modal>
-
       <Works
         handleOpenWorkModal={setIsWorkModal}
         handleSetWorkCardInfo={handleSetWorkCardInfo}
@@ -64,6 +70,10 @@ export const App: React.FC = () => {
       <Skills />
       <Contacts />
       <Footer />
+      <Menu isMenuActive={isMenuActive} handleCloseBurgerMenu={handleCloseBurgerMenu} />
+      <Modal active={aboutModalValue} setActive={setAboutModalValue}>
+        <AboutBody active={aboutModalValue} />
+      </Modal>
       <Modal active={isWorkModal} setActive={setIsWorkModal}>
         <WorkModalBody workCardData={workCardData} />
       </Modal>

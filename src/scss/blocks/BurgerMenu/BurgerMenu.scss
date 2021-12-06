@@ -1,4 +1,4 @@
-.menu {
+.burger-menu {
   &__button {
     position: relative;
 
@@ -20,7 +20,7 @@
       width: 28px;
       height: 2px;
 
-      background-color: #FFFFFF;
+      background-color: #ffffff;
 
       &:nth-child(1) {
         top: 12px;

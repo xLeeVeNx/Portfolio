@@ -9,7 +9,7 @@ import social from "../../constants/socialLinks";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <Logo logoText="RD" />
       {social.map(({ name, socialLinks, id }) => {
         return (

@@ -8,7 +8,7 @@ import contacts from "../../constants/contacts";
 
 const Contacts = () => {
   return (
-    <section className="contacts">
+    <section className="contacts" id="contacts">
       <div className="contacts__container">
         {contacts.map(
           ({ name1, textName1, title, name2, textName2, icon, id }) => {

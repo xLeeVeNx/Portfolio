@@ -1,16 +1,20 @@
-import React from 'react';
-import { Navigation } from './Navigation/Navigation';
-import { Content } from './Content/Content';
-import { Decor } from '../Decor/Decor';
+import React from "react";
+import { Navigation } from "./Navigation/Navigation";
+import { Content } from "./Content/Content";
+import { Decor } from "../Decor/Decor";
 
-export const Header: React.FC = () => {
-	return (
-		<header className="header">
-			<Navigation />
+interface IHeader {
+  handleOpenBurgerMenu: () => void;
+}
 
-			<Content />
+export const Header: React.FC<IHeader> = ({ handleOpenBurgerMenu }) => {
+  return (
+    <header className="header" id="home">
+      <Navigation handleOpenBurgerMenu={handleOpenBurgerMenu} />
 
-			<Decor fill="#2a2a2a"/>
-		</header>
-	);
+      <Content />
+
+      <Decor fill="#2a2a2a" />
+    </header>
+  );
 };
