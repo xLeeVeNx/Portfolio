@@ -10,6 +10,18 @@ import myKoreaMainImage from "../assets/images/my-korea.jpg";
 import myKoreaFirstImage from "../assets/images/myKoreaFirstImage.png";
 import myKoreaSecondImage from "../assets/images/myKoreaSecondImage.png";
 
+import kalibrisFirstImage from "../assets/images/kalibrisFirstImage.png";
+import kalibrisSecondImage from "../assets/images/kalibrisSecondImage.png";
+import kalibrisMain from "../assets/images/kalibrisMain.jpeg";
+
+import gleeFirstImage from "../assets/images/gleeFirstImage.png";
+import gleeSecondImage from "../assets/images/gleeSecondImage.png";
+import gleeMain from "../assets/images/gleeMain.jpg";
+
+import marchoFirstImage from "../assets/images/marchoFirstImage.png";
+import marchoSecondImage from "../assets/images/marchoSecondImage.png";
+import marchoMain from "../assets/images/marchoMain.jpg";
+
 const worksData = [
   {
     title: "Stellar Burgers",
@@ -59,18 +71,51 @@ const worksData = [
     link: "https://ramiltanker.github.io/mykorea/",
     id: 3,
   },
-  // {
-  //     title: ,
-  //     shortDescription: ,
-  //     clientName: ,
-  //     projectValue: ,
-  //     date: ,
-  //     descriptionFirst: ,
-  //     descriptionSecond: ,
-  //     mainImage: ,
-  //     exampleImageFirst: ,
-  //     exampleImageSecond:
-  //     },
+  {
+    title: "Kalibris",
+    shortDescription: "Safe & Easy payments",
+    clientName: "-",
+    projectValue: "-",
+    date: "11 May 2021",
+    descriptionFirst:
+      "If you, too, are among the handful of people who are afraid (and rightly so) to hand over their credit information online, we're here for you!",
+    descriptionSecond:
+      "TheKalibris allows you to get a virtual credit card number in less than 60 seconds and pay with it online! What are you waiting for?",
+    mainImage: kalibrisMain,
+    exampleImageFirst: kalibrisFirstImage,
+    exampleImageSecond: kalibrisSecondImage,
+    link: "https://xleevenx.github.io/TheKabibris/index-en.html",
+    id: 4,
+  },
+  {
+    title: "Glee",
+    shortDescription: "Smart and Trendy",
+    clientName: "-",
+    projectValue: "-",
+    date: "20 December 2020",
+    descriptionFirst: "Mission of our creative house",
+    descriptionSecond: "Sale of high-quality, branded and designer furniture.",
+    mainImage: gleeMain,
+    exampleImageFirst: gleeFirstImage,
+    exampleImageSecond: gleeSecondImage,
+    link: "https://xleevenx.github.io/Glee/index.html",
+    id: 5,
+  },
+  {
+    title: "Marcho",
+    shortDescription: "Clothes Shop",
+    clientName: "-",
+    projectValue: "-",
+    date: "20 Jan 2021",
+    descriptionFirst: "The site is designed for the Marcho clothing store",
+    descriptionSecond:
+      "The site provides a huge selection of clothes, its purchase, adding to the cart, and so on.",
+    mainImage: marchoMain,
+    exampleImageFirst: marchoFirstImage,
+    exampleImageSecond: marchoSecondImage,
+    link: "https://xleevenx.github.io/Marcho-s-online-shop/",
+    id: 6,
+  },
 ];
 
 export default worksData;
