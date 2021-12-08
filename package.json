@@ -14,6 +14,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.3.2",
     "@types/react-scroll": "^1.8.3",
+    "@types/swiper": "^5.4.3",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,6 +24,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-typed": "^1.2.0",
+    "swiper": "6.8.4",
     "tsparticles": "^1.35.1",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
