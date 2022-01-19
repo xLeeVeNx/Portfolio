@@ -26,16 +26,16 @@
 
 .works {
   position: relative;
-  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   padding-bottom: 200px;
 
   &__title {
-    font-size: 48px;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
     background-image: url(../../../assets/images/bg-font.jpg);
     -webkit-background-clip: text;
@@ -136,6 +136,7 @@
     background: #fff;
     content: "";
   }
+
   &__card-button:after {
     bottom: -5px;
     height: 2px;

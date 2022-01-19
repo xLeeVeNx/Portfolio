@@ -11,24 +11,26 @@ const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <Logo logoText="RD" />
-      {social.map(({ name, socialLinks, id }) => {
-        return (
-          <div className="footer__box" key={id}>
-            <p className="footer__name">{name}:</p>
-            <ul className="footer__list">
-              {socialLinks.map(({ socialLink, icon, id }) => {
-                return (
-                  <SocialLinkCard
-                    socialLink={socialLink}
-                    icon={icon}
-                    key={id}
-                  />
-                );
-              })}
-            </ul>
-          </div>
-        );
-      })}
+      <div className="footer__wrap">
+        {social.map(({name, socialLinks, id}) => {
+          return (
+            <div className="footer__box" key={id}>
+              <p className="footer__name">{name}:</p>
+              <ul className="footer__list">
+                {socialLinks.map(({socialLink, icon, id}) => {
+                  return (
+                    <SocialLinkCard
+                      socialLink={socialLink}
+                      icon={icon}
+                      key={id}
+                    />
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
       <p className="footer__text">Follow and Contact us :)</p>
     </footer>
   );

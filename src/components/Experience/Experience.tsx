@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 // Components
-import ExperienceContainer from "../ExperienceContainer/ExperienceContainer";
+import ExperienceContainer from '../ExperienceContainer/ExperienceContainer';
 // Components
 
 // Experience Data
-import { experience } from "../../constants/experience";
+import { experience } from '../../constants/experience';
+import { Decor } from '../Decor/Decor';
 // Experience Data
 
 const Experience = () => {
@@ -15,10 +16,10 @@ const Experience = () => {
   const handleShowExperience = (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
-    if ((e.target as HTMLElement).id === "ramil") {
+    if ((e.target as HTMLElement).id === 'ramil') {
       setIsDamil(false);
       setIsRamil(true);
-    } else if ((e.target as HTMLElement).id === "damil") {
+    } else if ((e.target as HTMLElement).id === 'damil') {
       setIsRamil(false);
       setIsDamil(true);
     }
@@ -30,7 +31,7 @@ const Experience = () => {
       <div className="experience__filter">
         <button
           className={`${
-            isRamil ? "experience__button-active" : ""
+            isRamil ? 'experience__button-active' : ''
           } experience__button`}
           id="ramil"
           onClick={(e) => {
@@ -41,7 +42,7 @@ const Experience = () => {
         </button>
         <button
           className={`${
-            isDamil ? "experience__button-active" : ""
+            isDamil ? 'experience__button-active' : ''
           } experience__button`}
           id="damil"
           onClick={(e) => {
@@ -51,7 +52,7 @@ const Experience = () => {
           Damil
         </button>
       </div>
-      {experience.map(({ id, lastExp, name }) => {
+      {experience.map(({id, lastExp, name}) => {
         return (
           <ExperienceContainer
             lastExp={lastExp}
@@ -62,17 +63,7 @@ const Experience = () => {
           />
         );
       })}
-      <svg
-        className="experience__decor"
-        x="0px"
-        y="0px"
-        viewBox="0 186.5 1920 113.5"
-      >
-        <polygon
-          points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "
-          fill="#202020"
-        ></polygon>
-      </svg>
+      <Decor fill="#202020"/>
     </section>
   );
 };

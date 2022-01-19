@@ -10,7 +10,7 @@ interface IMenuCard {
 
 const MenuCard: React.FC<IMenuCard> = ({ img, title, to }) => {
   return (
-    <Link className="menu__card" to={to} spy={true} smooth={true}>
+    <Link className={`menu__card `} ignoreCancelEvents to={to} spy smooth offset={-100}>
       <div className="menu__link">
         <img src={img} alt={title} className="menu__image" />
         <p className="menu__text">{title}</p>
