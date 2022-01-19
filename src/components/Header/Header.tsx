@@ -10,7 +10,7 @@ interface IHeader {
 export const Header: React.FC<IHeader> = ({ handleOpenBurgerMenu }) => {
   return (
     <header className="header" id="home">
-      <Navigation handleOpenBurgerMenu={handleOpenBurgerMenu} />
+      {/* <Navigation handleOpenBurgerMenu={handleOpenBurgerMenu} /> */}
 
       <Content />
 
