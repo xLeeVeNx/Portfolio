@@ -15,7 +15,7 @@
 
     @extend %berkshireSwash-400;
   }
-  
+
   &__box {
     position: relative;
   }
@@ -44,13 +44,11 @@
     }
   }
 
-  &__title-box {
-    display: flex;
-  }
-
   &__title {
     margin: 20px 0 30px 0;
 
+    display: block;
+    
     font-size: 3.8rem;
     line-height: 1.2em;
 
@@ -160,133 +158,133 @@
   .header {
     &__content {
     }
-  
+
     &__wrap {
 
     }
-    
+
     &__box {
 
     }
-  
+
     &__subtitle-text {
       font-size: 1.2rem;
       letter-spacing: 8px;
-  
+
       &::after {
         content: "";
         position: absolute;
         top: 50%;
         right: -75px;
-  
+
         width: 65px;
         height: 2px;
-  
+
         background-color: #FFFFFF;
         border-radius: 2px;
-  
+
         transform: translateY(-50%);
       }
     }
-  
+
     &__title-box {
       display: flex;
     }
-  
+
     &__title {
       margin: 20px 0 30px 0;
-  
+
       font-size: 3.8rem;
       line-height: 1.2em;
-  
+
       background: url('../../../assets/images/bg-font.jpg') no-repeat;
-  
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-  
+
     &__arrow-down {
       position: absolute;
       bottom: -150px;
-  
+
       width: 40px;
       height: 40px;
-  
+
       cursor: pointer;
       animation: scroll ease 2s infinite;
     }
-  
+
     &__image {
       width: 400px;
     }
-  
+
     &__social {
       position: absolute;
       top: 50%;
       left: 15px;
       z-index: 1;
-  
+
       &::before {
         content: "";
         position: absolute;
         left: 50%;
         top: -90px;
-  
+
         width: 1px;
         height: 70px;
-  
+
         background-color: $separateColor;
-  
+
         transform: translateX(-50%);
       }
-  
+
       &::after {
         content: "SOCIAL";
         position: absolute;
         right: -22px;
         top: -155px;
-  
-        @extend %oswald-400;
+
+        font-weight: 400;
         letter-spacing: 5px;
-  
+
         color: #888888;
-  
+
         transform: rotate(-90deg);
       }
     }
-  
+
     &__social-item {
       &:not(:last-child) {
         margin-bottom: 5px;
       }
     }
-  
+
     .MuiSvgIcon-root {
       &:hover {
         fill: #999999;
       }
     }
-  
+
     &__copy {
       position: absolute;
       bottom: 100px;
       right: 20px;
-  
-      @extend %oswald-400;
+
+      font-weight: 400;
       font-size: 16px;
-  
+
       color: #DDDDDD;
-  
+
       transform: rotate(-13deg);
     }
-  
+
     &__decor {
       position: absolute;
       bottom: 0;
       left: 0;
-  
+
       width: 100%;
-  
+
       border-bottom: 1px solid $separateColor;
     }
   }

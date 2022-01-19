@@ -12,7 +12,7 @@ export const Title: React.FC<TitlePropsType> = ({text}) => {
 
 			<Typed
 				className="header__title"
-				strings={['Berdyev Damil and Ashrafulin Ramil', 'a Front-End Developers']}
+				strings={['Berdyev Damil and Ashrafulin Ramil', 'Front-End Developers']}
 				typeSpeed={100}
 				backSpeed={80}
 				loop

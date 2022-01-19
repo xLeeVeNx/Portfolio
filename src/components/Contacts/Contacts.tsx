@@ -4,6 +4,7 @@ import ContactCard from "../ContactCard/ContactCard";
 
 // Contacts Data
 import contacts from "../../constants/contacts";
+import { Decor } from "../Decor/Decor";
 // Contacts Data
 
 const Contacts = () => {
@@ -26,17 +27,7 @@ const Contacts = () => {
           }
         )}
       </div>
-      <svg
-        className="contacts__decor"
-        x="0px"
-        y="0px"
-        viewBox="0 186.5 1920 113.5"
-      >
-        <polygon
-          points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "
-          fill="#202020"
-        ></polygon>
-      </svg>
+      <Decor fill="#202020"/>
     </section>
   );
 };

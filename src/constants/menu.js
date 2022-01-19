@@ -42,12 +42,6 @@ const menu = [
     title: "CONTACTS",
     to: "contacts",
   },
-  {
-    id: 6,
-    img: footer,
-    title: "SOCIAL",
-    to: "footer",
-  },
 ];
 
 export default menu;

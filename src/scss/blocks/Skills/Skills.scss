@@ -8,15 +8,16 @@
 }
 
 .skills {
-  margin-top: 50px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   &__title {
-    font-size: 48px;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
     background-image: url(../../../assets/images/bg-font.jpg);
     -webkit-background-clip: text;

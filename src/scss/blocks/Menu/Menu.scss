@@ -33,6 +33,15 @@
   }
 
   &__card {
+    &.active {
+      .menu__text {
+        opacity: 1;
+      }
+
+      .menu__link::after {
+        opacity: 1;
+      }
+    }
   }
 
   &__link::after {
