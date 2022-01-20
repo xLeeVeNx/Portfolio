@@ -107,20 +107,15 @@
   }
 
   @media all and (max-width: 800px) {
-    &__image {
-      width: 280px;
-      height: 200px;
-      margin-right: 20px;
-    }
-  }
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-  @media all and (max-width: 800px) {
     &__images-block {
       display: flex;
       flex-direction: column;
       width: 100%;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
     &__image {
       width: 450px;
@@ -169,6 +164,9 @@
   }
 
   @media all and (max-width: 425px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
     &__info-text {
       text-align: center;
       width: 100%;

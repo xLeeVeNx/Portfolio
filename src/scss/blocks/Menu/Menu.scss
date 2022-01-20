@@ -134,9 +134,23 @@
     }
   }
 
-  @media all and (max-width: 375px) {
+  @media all and (max-width: 400px) {
     width: 250px;
     padding: 30px 35px;
+
+    &__link {
+      margin-bottom: 15px;
+      height: 130px;
+    }
+
+    &__text {
+      font-size: 26px;
+    }
+  }
+
+  @media all and (max-width: 345px) {
+    width: 225px;
+    padding: 30px 7px 30px 41px;
 
     &__link {
       margin-bottom: 15px;
