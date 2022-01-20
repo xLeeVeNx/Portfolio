@@ -60,23 +60,26 @@ export const App: React.FC = () => {
 
   return (
     <div className="wrapper">
-      {/* <Header handleOpenBurgerMenu={handleOpenBurgerMenu}/>
-      <About setAboutModalValue={setAboutModalValue}/> */}
-      {/* <Works
+      {/* <Header handleOpenBurgerMenu={handleOpenBurgerMenu} /> */}
+      {/* <About setAboutModalValue={setAboutModalValue} /> */}
+      <Works
         handleOpenWorkModal={setIsWorkModal}
         handleSetWorkCardInfo={handleSetWorkCardInfo}
-      /> */}
-      {/* <Experience/> */}
+      />
+      <Experience />
       <Skills />
-      {/* <Contacts/>
-      <Footer/> */}
-      {/* <Menu isMenuActive={isMenuActive} handleCloseBurgerMenu={handleCloseBurgerMenu}/>
-      <Modal active={aboutModalValue} setActive={setAboutModalValue}>
-        <AboutBody active={aboutModalValue}/>
-      </Modal>
-      <Modal active={isWorkModal} setActive={setIsWorkModal}>
-        <WorkModalBody workCardData={workCardData}/>
+      <Contacts />
+      <Footer />
+      <Menu
+        isMenuActive={isMenuActive}
+        handleCloseBurgerMenu={handleCloseBurgerMenu}
+      />
+      {/* <Modal active={aboutModalValue} setActive={setAboutModalValue}>
+        <AboutBody active={aboutModalValue} />
       </Modal> */}
+      <Modal active={isWorkModal} setActive={setIsWorkModal}>
+        <WorkModalBody workCardData={workCardData} />
+      </Modal>
     </div>
   );
 };

@@ -154,13 +154,15 @@
   }
 
   @media all and (max-width: 768px) {
+    padding-bottom: 130px;
+
     &__cards-container {
       grid-template-columns: 1fr;
     }
 
     &__card {
-      width: 100%;
-      height: 100%;
+      width: 300px;
+      height: 200px;
       padding-right: 15px;
       padding-left: 15px;
     }
@@ -195,5 +197,13 @@
     &__card-text {
       font-size: 18px;
     }
+  }
+
+  @media (max-width: 450px) {
+    padding-bottom: 100px;
+  }
+
+  @media all and (max-width: 360px) {
+    padding-bottom: 80px;
   }
 }

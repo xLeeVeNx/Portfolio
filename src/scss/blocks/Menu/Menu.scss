@@ -114,4 +114,37 @@
     opacity: 1;
     transition: all 300ms linear;
   }
+
+  @media all and (max-width: 700px) {
+    width: 400px;
+    padding: 50px 45px;
+  }
+
+  @media all and (max-width: 500px) {
+    width: 300px;
+    padding: 30px 35px;
+
+    &__link {
+      margin-bottom: 15px;
+      height: 150px;
+    }
+
+    &__text {
+      font-size: 30px;
+    }
+  }
+
+  @media all and (max-width: 375px) {
+    width: 250px;
+    padding: 30px 35px;
+
+    &__link {
+      margin-bottom: 15px;
+      height: 130px;
+    }
+
+    &__text {
+      font-size: 26px;
+    }
+  }
 }

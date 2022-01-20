@@ -135,6 +135,18 @@
   }
 
   @media all and (max-width: 555px) {
+    &__title {
+      font-family: Berkshire Swash, cursive;
+      font-size: 40px;
+    }
+
+    &__image {
+      width: 350px;
+      height: 200px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
     &__short-info {
       flex-direction: column;
       justify-content: center;
@@ -145,24 +157,41 @@
     &__info-text:nth-of-type(2) {
       border: none;
     }
+
+    &__link-title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    &__link {
+      font-size: 17px;
+    }
   }
 
   @media all and (max-width: 425px) {
-    &__image {
-      width: 400px;
-      height: 230px;
-    }
-
     &__info-text {
       text-align: center;
       width: 100%;
     }
   }
 
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 375px) {
+    &__title {
+      font-size: 30px;
+    }
+
     &__image {
-      width: 300px;
-      height: 200px;
+      width: 200px;
+      height: 150px;
+    }
+
+    &__link-title {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 14px;
     }
   }
 }
