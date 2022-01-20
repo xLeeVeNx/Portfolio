@@ -3,13 +3,13 @@ import { openModal } from '../pureFunctions/openModal';
 
 type ButtonPropsType = {
 	text: string;
-	setAboutModalValue?: (value: boolean) => void;
+	abs?: () => void;
 }
 
-export const Button: React.FC<ButtonPropsType> = ({text, setAboutModalValue}) => {
-	if (setAboutModalValue) {
+export const Button: React.FC<ButtonPropsType> = ({text, abs}) => {
+	if (abs) {
 		return (
-			<button className="button" onClick={ () => openModal(setAboutModalValue) }>{ text }</button>
+			<button className="button" onClick={ () => abs && openModal(abs) }>{ text }</button>
 		);
 	} else {
 		return (

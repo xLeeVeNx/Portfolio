@@ -4,13 +4,13 @@ import { Decor } from "../Decor/Decor";
 import { Content } from "./Content/Content";
 
 type AboutPropsType = {
-  setAboutModalValue: (value: boolean) => void;
+  abs: (data: any) => void;
 };
 
-export const About: React.FC<AboutPropsType> = ({ setAboutModalValue }) => {
+export const About: React.FC<AboutPropsType> = ({ abs }) => {
   return (
     <section className="about" id="about">
-      <Content setAboutModalValue={setAboutModalValue} />
+      <Content abs={abs} />
       <Decor fill="#202020" />
       <Particles
         className="about__decor"

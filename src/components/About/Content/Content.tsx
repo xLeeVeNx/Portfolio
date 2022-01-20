@@ -17,10 +17,10 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 SwiperCore.use([Pagination, Navigation]);
 
 type ContentPropsType = {
-  setAboutModalValue: (value: boolean) => void;
+  abs: (data: any) => void;
 };
 
-export const Content: React.FC<ContentPropsType> = ({ setAboutModalValue }) => {
+export const Content: React.FC<ContentPropsType> = ({ abs }) => {
   return (
     <Swiper
       pagination={{
@@ -36,12 +36,12 @@ export const Content: React.FC<ContentPropsType> = ({ setAboutModalValue }) => {
             <div className="about__inner">
               <LeftSide />
               <RightSide
-                setAboutModalValue={setAboutModalValue}
                 name={name}
                 age={age}
                 phone={phone}
                 email={email}
                 text={text}
+                abs={() => abs({name, age, phone, email})}
               />
             </div>
           </SwiperSlide>

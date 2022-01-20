@@ -5,7 +5,7 @@ import { Button } from "../../../Button/Button";
 import { Title } from "../../../Title/Title";
 
 type RightSidePropsType = {
-  setAboutModalValue: (value: boolean) => void;
+  abs: () => void;
   name: string;
   age: string;
   phone: string;
@@ -14,12 +14,12 @@ type RightSidePropsType = {
 };
 
 export const RightSide: React.FC<RightSidePropsType> = ({
-  setAboutModalValue,
   name,
   age,
   phone,
   email,
   text,
+  abs
 }) => {
   return (
     <div className="about__right">
@@ -31,7 +31,7 @@ export const RightSide: React.FC<RightSidePropsType> = ({
 
       <List name={name} age={age} phone={phone} email={email} />
 
-      <Button text="More About" setAboutModalValue={setAboutModalValue} />
+      <Button text="More About" abs={abs} />
     </div>
   );
 };
