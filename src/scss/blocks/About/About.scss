@@ -135,6 +135,10 @@
     background-color: white;
   }
 
+  .swiper-pagination {
+    bottom: 50px;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     color: white;
@@ -207,7 +211,7 @@
     }
 
     .button {
-      margin: 0 auto 50px;
+      margin: 0 auto 80px;
     }
   }
 }
@@ -230,8 +234,8 @@
       height: 250px;
     }
 
-    .button {
-      margin-bottom: 30px;
+    &__value {
+      word-break: break-word;
     }
   }
 }
@@ -250,10 +254,6 @@
     &__image {
       width: 220px;
       height: 220px;
-    }
-
-    .button {
-      margin-bottom: 20px;
     }
   }
 }

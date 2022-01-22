@@ -67,7 +67,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="wrapper">
-      {/* <Header handleOpenBurgerMenu={handleOpenBurgerMenu} /> */}
+       <Header handleOpenBurgerMenu={handleOpenBurgerMenu} />
       <About abs={abs}/>
       <Works
         handleOpenWorkModal={setIsWorkModal}

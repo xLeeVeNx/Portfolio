@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { openModal } from '../pureFunctions/openModal';
 
 type ButtonPropsType = {
@@ -13,7 +14,7 @@ export const Button: React.FC<ButtonPropsType> = ({text, abs}) => {
 		);
 	} else {
 		return (
-			<a className="button" href="/">{ text }</a>
+			<Link className="button" ignoreCancelEvents to="contacts" spy smooth offset={-100}>{ text }</Link>
 		);
 	}
 };
