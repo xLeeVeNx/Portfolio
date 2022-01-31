@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.41ea53db.chunk.css",
-    "main.js": "/Portfolio/static/js/main.ba91fd30.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.ba91fd30.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.a2cf141f.chunk.css",
+    "main.js": "/Portfolio/static/js/main.63e61175.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.63e61175.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.89054b7a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.89054b7a.js.map",
     "static/css/2.3fa15d0e.chunk.css": "/Portfolio/static/css/2.3fa15d0e.chunk.css",
-    "static/js/2.4d2e6fd8.chunk.js": "/Portfolio/static/js/2.4d2e6fd8.chunk.js",
-    "static/js/2.4d2e6fd8.chunk.js.map": "/Portfolio/static/js/2.4d2e6fd8.chunk.js.map",
+    "static/js/2.796277a4.chunk.js": "/Portfolio/static/js/2.796277a4.chunk.js",
+    "static/js/2.796277a4.chunk.js.map": "/Portfolio/static/js/2.796277a4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.3fa15d0e.chunk.css.map": "/Portfolio/static/css/2.3fa15d0e.chunk.css.map",
-    "static/css/main.41ea53db.chunk.css.map": "/Portfolio/static/css/main.41ea53db.chunk.css.map",
-    "static/js/2.4d2e6fd8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.4d2e6fd8.chunk.js.LICENSE.txt",
+    "static/css/main.a2cf141f.chunk.css.map": "/Portfolio/static/css/main.a2cf141f.chunk.css.map",
+    "static/js/2.796277a4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.796277a4.chunk.js.LICENSE.txt",
     "static/media/AboutMe.650aba18.png": "/Portfolio/static/media/AboutMe.650aba18.png",
     "static/media/main.scss": "/Portfolio/static/media/bg-font.0ccaa5fb.jpg",
     "static/media/HeaderMe.e4a160bb.jpg": "/Portfolio/static/media/HeaderMe.e4a160bb.jpg",
@@ -19,7 +19,7 @@
     "static/media/Stellar Burgers.aff84fed.png": "/Portfolio/static/media/Stellar Burgers.aff84fed.png",
     "static/media/StellarBurgersExample1.8f4c088b.png": "/Portfolio/static/media/StellarBurgersExample1.8f4c088b.png",
     "static/media/StellarBurgersExample2.26192ef7.png": "/Portfolio/static/media/StellarBurgersExample2.26192ef7.png",
-    "static/media/arrow-down.dd1b2c95.svg": "/Portfolio/static/media/arrow-down.dd1b2c95.svg",
+    "static/media/arrow-down.d10345e3.svg": "/Portfolio/static/media/arrow-down.d10345e3.svg",
     "static/media/contacts.ae3cb457.png": "/Portfolio/static/media/contacts.ae3cb457.png",
     "static/media/experience.ad0762bd.png": "/Portfolio/static/media/experience.ad0762bd.png",
     "static/media/footer.14fedb85.png": "/Portfolio/static/media/footer.14fedb85.png",
@@ -44,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.89054b7a.js",
     "static/css/2.3fa15d0e.chunk.css",
-    "static/js/2.4d2e6fd8.chunk.js",
-    "static/css/main.41ea53db.chunk.css",
-    "static/js/main.ba91fd30.chunk.js"
+    "static/js/2.796277a4.chunk.js",
+    "static/css/main.a2cf141f.chunk.css",
+    "static/js/main.63e61175.chunk.js"
   ]
 }
